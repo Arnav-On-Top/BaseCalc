@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BaseCalc</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h1>BaseCalc</h1>
+            <p>Convert numbers between different number system</p>
+            <label>Binary</label>
+            <div class="row">
+                <input id="bin" placeholder="Example: 1010" oninput="fromBin()">
+                <button onclick="copyText(bin)">Copy</button>
+            </div>
+            <small id="binError"></small>
+            <label>Decimal</label>
+            <div class="row">
+                <input id="dec" placeholder="Example: 10" oninput="fromDec()">
+                <button onclick="copyText(dec)">Copy</button>
+            </div>
+            <small id="decError"></small>
+            <label>Hexadecimal</label>
+            <div class="row">
+                <input id="hex" placeholder="Example: A" oninput="fromHex()">
+                <button onclick="copyText(hex)">Copy</button>
+            </div>
+            <small id="hexError"></small>
+            <label>Octal</label>
+            <div class="row">
+                <input id="oct" placeholder="Example: 12" oninput="fromOct()">
+                <button onclick="copyText(oct)">Copy</button>
+            </div>
+            <small id="octError"></small>
+            <button class="clear" onclick="clearAll()">Clear All</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
